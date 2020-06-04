@@ -1,0 +1,1384 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Body */
+body {
+    width: 100%;
+    font-family: montserrat;
+}
+
+/* -- Navigation Bar -- */
+nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 60px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* CSS Logo Navbar */
+nav img {
+    height: 38px;
+}
+
+/* Toggle Button for mobile */
+.toggle-button {
+    position: fixed;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #1C518A;
+    border-radius: 100px;
+}
+
+/* Navbar Button Links  */
+.navbar-links ul li a {
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    margin: 5px;
+    font-size: 15px;
+    border: white solid 2px;
+}
+
+.navbar-links ul li a:hover {
+    transition: 0.7s;
+    background-color: white;
+    border-radius: 5px;
+    border: #F5A300 solid 2px;
+}
+
+.navbar-links .cont-button {
+    color: white;
+    background: linear-gradient(#F5A300, #F67200);
+    border-radius: 5px;
+    border: white solid 2px;
+
+}
+
+.navbar-links .cont-button:hover {
+    color: black;
+    background: white;
+    border-radius: 5px;
+    border: #F67200 solid 2px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+/* CSS Home */
+
+.home {
+    height: 900px;
+    background-image: url(/images/home-bg.png);
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    padding: 220px 140px;
+    text-align: center;
+    color: white;
+}
+
+.home img {
+    height: 60px;
+}
+
+.home h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.home p {
+    margin-bottom: 30px;
+}
+
+.home a {
+    color: white;
+    background: linear-gradient(#F5A300, #F67200);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+/* css What's Iproc */
+.what {
+    text-align: center;
+    background-image: url(/images/1.what/bg.png);
+    background-position-y: 350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.what h1 {
+    margin-bottom: 80px;
+}
+
+.what-content-one {
+    display: flex;
+    justify-content: center;
+
+}
+
+.what-box {
+    flex-grow: 1;
+
+    /* properti lainnya */
+    margin: 5px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    max-width: 382px;
+    max-height: 420px;
+    margin-bottom: 80px;
+
+}
+
+.what-box h2 {
+    font-size: 17px;
+}
+
+.what-box p {
+    max-width: 260px;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.what-img {
+    height: 180px;
+}
+
+.what-content-two {
+    display: flex;
+    justify-content: center;
+}
+
+
+.what-box:hover {
+    box-shadow: 0 4px 8px 0 rgb(255, 167, 91);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateY(-20px);
+    transition: 1s;
+    display: inline;
+    z-index: 1;
+}
+
+/* cSS How it Works */
+
+.how {
+    height: 1000px;
+    background-image: url(/images/2.how/illustrasi.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.how-tittle h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 150px;
+    padding-top: 120px;
+}
+
+.how-tittle p {
+    text-align: center;
+    margin: 0;
+}
+
+.how-content-one {
+    display: flex;
+    align-items: center;
+}
+
+.how-content {
+    align-items: center;
+    margin: 50px 150px;
+    margin-left: 200px;
+}
+
+.how-box {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 450pxv;
+    max-height: 99px;
+}
+
+.how-box img {
+    height: 60px;
+}
+
+.how-box h2 {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+.how-box p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.how-text {
+    margin-left: 30px;
+}
+
+.how-box:hover {
+    box-shadow: 0 4px 8px 0 rgb(255, 167, 91);
+    background-color: white;
+    transform: translateY(-10px);
+    transition: 1s;
+    z-index: 1;
+}
+
+/* CSS Why Choose Iproc */
+.why {
+    background-image: url(/images/3.why/bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 750px;
+    margin-top: 100px;
+}
+
+.why h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-content {
+    display: flex;
+    justify-content: center;
+}
+
+.why-box {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+    margin: 15px;
+
+}
+
+.why-text {
+    padding: 10px 30px;
+}
+
+.why-text h2 {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.why-text p {
+    font-size: 11px;
+}
+
+.why-p {
+    margin-bottom: 30px;
+}
+
+.why-box img {
+    height: 150px;
+    margin: 20px 65px;
+    margin-top: 40px;
+}
+
+.why-box:hover {
+    box-shadow: 0 4px 8px 0 rgb(255, 167, 91);
+    background-color: white;
+    transform: translateY(-10px);
+    transition: 1s;
+    z-index: 1;
+}
+
+/* CSS Live Demo */
+.live {
+    text-align: center;
+    background-image: url(/images/4.live/bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+    margin-top: 100px;
+}
+
+.live h1 {
+    margin-bottom: 110px;
+}
+
+.live-content {
+    display: flex;
+    justify-content: center;
+}
+
+.live-box {
+    margin: 15px;
+}
+
+.live-box img {
+    height: 170px;
+}
+
+.live-text {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.live-text h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.live-text p {
+    font-size: 15px;
+}
+
+.live-button-one {
+    color: white;
+    background: linear-gradient(#F5A300, #F67200);
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.live-box:hover {
+    box-shadow: 0 4px 8px 0 #F5A300;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-15px);
+    transition: 1s;
+    z-index: 1;
+}
+
+/* CSS Our Clients */
+.our {
+    text-align: center;
+    background-image: url(/images/5.our/map.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+.our-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.our img {
+    margin: 40px;
+    height: 400px;
+
+}
+
+.our-content img:hover {
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    transition: 1s;
+    z-index: 1;
+}
+
+/* CSS Contact Us */
+.contact {
+    background-image: url(/images/6.contact/bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.cont-content {
+    display: flex;
+    padding: 150px;
+    padding-top: 250px;
+    justify-content: center;
+}
+
+.cont-content h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cont-content h2 {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.cont-poin {
+    max-width: 380px;
+    max-height: 400px;
+    margin-right: 50px;
+}
+
+.cont-poin-1 {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.cont-poin-1 p {
+    color: white;
+    font-size: 14px;
+    margin-left: 25px;
+    justify-content: center;
+}
+
+.cont-poin-1 img {
+    align-items: center;
+    /* margin: 30px auto; */
+    height: 30px;
+}
+
+.cont-maps {
+    margin: px auto;
+}
+
+.cont-maps img {
+    height: 300px;
+}
+
+/* CSS Footer */
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 140px;
+}
+
+footer a img {
+    height: 15px;
+    margin: 8px;
+}
+
+
+
+/* --MEDIA QUERY-- */
+
+/* Web Version */
+@media (max-width: 1200px) {
+
+    /* Navigation Bar */
+    nav {
+        padding: 15px 35px;
+    }
+
+    .navbar-links ul li a {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+
+    /* CSS Home */
+    .home {
+        height: 750px;
+    }
+
+    /* CSS How */
+    .how {
+        height: 840px;
+    }
+
+    .how-tittle h1 {
+        margin: 0;
+        padding-top: 100px;
+    }
+
+    /* CSS Live */
+    .live-box img {
+        height: 140px;
+    }
+
+    .live {
+        margin-top: 0;
+        background-position-x: -10px;
+        background-size: 110%;
+    }
+
+    /* CSS Contact */
+    .contact {
+        height: 550px;
+    }
+
+    .cont-content {
+        padding: 20px;
+        padding-top: 170px;
+    }
+
+    .cont-poin-1 {
+        max-height: 250px;
+    }
+
+    .cont-maps img {
+        height: 250px;
+        max-height: 350px;
+    }
+
+    .cont-poin-1 p {
+        color: white;
+        font-size: 12px;
+        margin-left: 25px;
+        justify-content: center;
+    }
+
+    .cont-content h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .cont-content h2 {
+        color: white;
+        font-size: 21px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    nav {
+        padding: 15px 30px;
+    }
+
+    .navbar-links ul li a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .home {
+        height: 750px;
+    }
+
+    /* What iproc */
+
+    /* konten1 */
+    .what-content-one {
+        margin: 10px 50px;
+        padding: 0;
+    }
+
+    .what-box {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .what-box h2 {
+        font-size: 15px;
+    }
+
+    .what-box p {
+        max-width: 260px;
+        font-size: 10px;
+    }
+
+    .what-img {
+        height: 160px;
+    }
+
+    /* konten2 */
+    .what-content-two {
+        display: flex;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    /* how */
+    .how {
+        height: 850px;
+    }
+
+    .how-box h2 {
+        font-size: 15px;
+    }
+
+    .how-box p {
+        font-size: 10px;
+    }
+
+    .how-box img {
+        height: 50px;
+    }
+
+    .how-text {
+        margin-left: 20px;
+    }
+
+    .how-content {
+        margin: 30px 80px;
+    }
+
+    /* CSS Why */
+    .why {
+        margin-top: 0;
+    }
+
+    /* live */
+    .live {
+        margin-top: 0;
+        background-position-x: -10px;
+        background-size: 125%;
+    }
+
+    /* contact */
+
+    .contact {
+        height: 500px;
+    }
+
+    .cont-poin {
+        max-height: 350px;
+    }
+
+    .cont-maps iframe {
+        width: 400px;
+        height: 250px;
+        max-height: 350px;
+    }
+
+    .cont-main-point {
+        margin-top: 30px;
+    }
+
+    .cont-poin-1 {
+        height: 50px;
+    }
+
+
+
+}
+
+@media (max-width: 980px) {
+    nav {
+        padding: 15px 17px;
+    }
+
+    .navbar-links ul li a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    /* live */
+    .live {
+        background-position-x: -150px;
+        background-size: 140%;
+        height: 900px;
+    }
+
+    .live-box img {
+        height: 120px;
+    }
+
+    .our img {
+        margin: 40px;
+        height: 320px;
+
+    }
+
+}
+
+/* Mobile Vesion */
+@media (max-width: 871px) {
+
+    /* Navigation Bar */
+    nav {
+        padding: 15px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+    }
+
+    .navbar-links .cont-button {
+        color: black;
+        background: white;
+    }
+
+    .navbar-links ul {
+        padding-bottom: 30px;
+    }
+
+    .navbar-links ul li {
+        margin: auto;
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .home {
+        padding: 210px 65px;
+    }
+
+    .home h1 {
+        font-size: 25px;
+    }
+
+    .toggle-button {
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    /* what iproc */
+    .what {
+        text-align: center;
+        background-image: url(/images/1.what/bg-mini.png);
+        background-position-y: 10px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .what h1 {
+        margin-bottom: 55px;
+    }
+
+    .what-content-one,
+    .what-content-two {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .what h2 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .what-box,
+    .box-two {
+        margin-bottom: 30px;
+    }
+
+    /* how */
+    .how {
+        background-position-y: 315px;
+    }
+
+    .how h1 {
+        margin-top: 30px;
+    }
+
+    .how-content-one {
+        flex-direction: column;
+    }
+
+    .how-content {
+        margin: 30px 50px;
+    }
+
+    /* why */
+    .why-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why {
+        margin-top: 80px;
+        height: 1180px;
+        background-image: url(/images/3.why/bg-mini.png);
+    }
+
+    .why-box {
+        padding-bottom: 30px;
+    }
+
+    /* live */
+    .live {
+        margin-top: 250px;
+        background-position-y: 120px;
+        background-position-x: -650px;
+        background-size: 230%;
+    }
+
+    .live h1 {
+        margin: 50px;
+    }
+
+    .live p {
+        margin: 20px;
+    }
+
+    .live-content {
+        flex-direction: column;
+    }
+
+    /* CSS Our */
+    .our {
+        padding-top: 50px;
+        height: 600px;
+    }
+
+    .our img {
+        margin: 40px;
+        height: 280px;
+
+    }
+
+    /* contact */
+
+    .contact {
+        height: 780px;
+        background-size: 110%;
+    }
+
+    .cont-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-content h1,
+    h2 {
+        text-align: center;
+    }
+
+    .cont-main-point {
+        margin-top: 40px;
+    }
+
+    .cont-poin {
+        margin-bottom: 30px;
+    }
+
+    .cont-poin-1 {
+        height: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px 50px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .live {
+
+        background-position-y: 120px;
+        background-position-x: -650px;
+        background-size: 290%;
+    }
+
+    .our {
+        background-position-y: 40px;
+    }
+
+    .our img {
+        margin: 40px;
+        height: 180px;
+
+    }
+
+    .contact {
+        height: 850px;
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 600px) {
+    .live {
+
+        background-position-y: 120px;
+        background-position-x: -650px;
+        background-size: 330%;
+    }
+
+    .our {
+        background-position-y: 70px;
+    }
+
+    .contact {
+        height: 800px;
+        background-size: 150%;
+
+    }
+}
+
+/* iPhone 6/7/8 Plus*/
+@media (max-width: 414px) {
+
+    /* Navigation Bar */
+    .navbar-links ul {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-links ul li {
+        margin: auto;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        font-size: 17px;
+        margin: 15px;
+    }
+
+    /* CSS Home */
+    .home {
+        height: 800px;
+    }
+
+    .home {
+        padding: 190px 40px;
+        padding-top: 220px;
+    }
+
+    /* CSS What */
+    .what {
+        background-position-y: 300px;
+    }
+
+    /* CSS How */
+    .how-tittle h1 {
+        padding-top: 50px;
+    }
+
+    .how-tittle p {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .how-text h2 {
+        text-align: left;
+    }
+
+    .how-box {
+        width: 300px;
+    }
+
+    .how {
+        height: 1000px;
+        background-image: url(/images/2.how/illustrasi.png);
+        background-size: 200%;
+        background-position-y: 370px;
+        background-position-x: -400px;
+        background-repeat: no-repeat;
+    }
+
+    /* CSS Why */
+    .why {
+        height: 1290px;
+        background-image: url(/images/3.why/bg-mini.png);
+    }
+
+    /* CSS Live */
+    .live {
+        margin-top: 250px;
+        background-image: url(/images/4.live/bg.png);
+        background-size: 500%;
+        background-position-y: 20px;
+    }
+
+    .live-content {
+        align-items: center;
+    }
+
+    .live-box {
+
+        width: 250px;
+        padding: 10px 8px 10px 5px;
+    }
+
+    .live-button-one {
+        margin: 5px;
+    }
+
+    /* CSS our */
+    .our {
+        margin-top: 50px;
+        height: 400px;
+    }
+
+    .our-content img {
+        margin: 0;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    /* CSS Contact */
+
+    .contact {
+        height: 600px;
+    }
+
+    .cont-content {
+        padding-top: 100px;
+    }
+
+    .cont-main-point {
+        margin-left: 25px;
+    }
+
+    .cont-maps iframe {
+        width: 330px;
+        height: 160px;
+    }
+
+}
+
+/* Pixel 2/2XL */
+@media (max-width: 411px) {
+    .live {
+        margin-top: 150px;
+    }
+}
+
+/* iPhone X /6/7/8 */
+@media (max-width: 375px) {
+
+    /* CSS How */
+    .how {
+        margin-top: 60px;
+        height: 950px;
+        background-position-y: 400px;
+        background-position-x: -360px;
+    }
+
+    /* CSS Why */
+    .why {
+        margin-top: 80px;
+    }
+
+    /* CSS Live */
+    .live {
+        margin-top: 100px;
+        height: 1000px;
+        background-size: 550%;
+        background-position-y: 60px;
+    }
+
+    /* CSS Our */
+    .our {
+        margin: 0;
+        padding-top: 0;
+    }
+}
+
+/* Galaxy S5 / Moto G4 */
+@media (max-width: 360px) {
+    body {
+        max-width: 360px;
+    }
+
+    /* Navigation Bar */
+    nav {
+        max-width: 360px;
+    }
+
+    .navbar-links ul {
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-links ul li {
+        margin: auto;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    /* Button bar for mobile */
+    .toggle-button {
+        position: fixed;
+        top: 12px;
+        right: 15px;
+
+    }
+
+    .toggle-button .bar {
+        height: 4px;
+        width: 100%;
+        background-color: #1C518A;
+        border-radius: 100px;
+    }
+
+    /* CSS How */
+
+    .how {
+        height: 1000px;
+        background-image: url(/images/2.how/illustrasi.png);
+        background-size: 200%;
+        background-position-y: 500px;
+        background-position-x: -350px;
+        background-repeat: no-repeat;
+    }
+
+    .how-tittle h1 {
+        padding-top: 50px;
+    }
+
+    .how-tittle p {
+        font-size: 15px;
+        padding: 10px 35px;
+    }
+
+    .how-text h2 {
+        text-align: left;
+    }
+
+    .how-box {
+        width: 300px;
+    }
+
+    /* CSS Why */
+    .why {
+        margin-top: 150px;
+        height: 1120px;
+        background-image: url(/images/3.why/bg-mini.png);
+    }
+
+    /* CSS Live */
+    .live {
+        margin-top: 350px;
+        background-image: url(/images/4.live/bg.png);
+        background-size: 500%;
+        background-position-y: 130px;
+    }
+
+    .live-content {
+        align-items: center;
+    }
+
+    .live-box {
+
+        width: 250px;
+        padding: 10px 8px 10px 5px;
+    }
+
+    .live-button-one {
+        margin: 5px;
+    }
+
+    /* CSS our */
+    .our {
+        padding-top: 0;
+        height: 400px;
+    }
+
+    .our-content img {
+        margin: 0;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+
+    /* CSS Contact */
+
+    .contact {
+        height: 600px;
+    }
+
+    .cont-content {
+        padding-top: 100px;
+    }
+
+    .cont-main-point {
+        margin-left: 25px;
+    }
+
+    .cont-maps iframe {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* iPhone 5/SE */
+@media (max-width: 320px) {
+
+    nav {
+        max-width: 320px;
+    }
+
+    /* Navigation Bar */
+
+    .navbar-links ul li {
+        width: 85%;
+    }
+
+    .navbar-links ul li a {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    /* Button bar for mobile */
+    .toggle-button {
+        position: fixed;
+        top: 12px;
+
+    }
+
+    .toggle-button .bar {
+        height: 4px;
+        width: 100%;
+        background-color: #1C518A;
+        border-radius: 100px;
+    }
+
+    /* CSS How */
+    .how {
+        background-position-y: 440px;
+        background-position-x: -310px;
+        height: 900px;
+    }
+
+    .how-box {
+        width: 270px;
+    }
+
+    .how-text h2 {
+        font-size: 12px;
+    }
+
+    .how-text p {
+        font-size: 10px;
+    }
+
+    .how-content {
+        align-items: center;
+    }
+
+    /* CSS Live */
+    .live {
+        height: 850px;
+        background-size: 650%;
+        background-position-y: 40px;
+    }
+
+    .live-button-one {
+        font-size: 13px;
+        padding: 10px 17px;
+    }
+
+    /* CSS our */
+    .our {
+        height: 350px;
+    }
+
+    .our-content img {
+        height: 130px;
+    }
+
+    /* CSS Contact */
+
+    .contact {
+        background-size: 250%;
+    }
+
+    .cont-text h1 {
+        font-size: 25px;
+    }
+
+    .cont-text h2 {
+        font-size: 18px;
+    }
+
+
+    .cont-maps iframe {
+        width: 250px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+}
